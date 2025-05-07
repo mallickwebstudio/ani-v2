@@ -1,10 +1,10 @@
 "use client"
 import { motion, useInView, useAnimation, Variant } from "framer-motion";
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 export type TextAnimationProps = {
   text: string | string[];
-  el?: keyof JSX.IntrinsicElements;
+  el?: keyof React.JSX.IntrinsicElements;
   className?: string;
   once?: boolean;
   repeatDelay?: number;

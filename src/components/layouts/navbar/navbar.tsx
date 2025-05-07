@@ -4,17 +4,23 @@ import { ModeToggle } from "@/components/other/mode-toggle"
 import { SidebarTrigger, useSidebar } from "@/components/ui/sidebar"
 import KeepslinkLogo from "@/components/other/svg"
 import Link from "next/link"
-import { CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command"
+import {
+    CommandDialog, CommandEmpty,
+    // CommandGroup,
+    // CommandItem,
+    CommandInput,
+    CommandList
+} from "@/components/ui/command"
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
-import { datas } from "@/lib/database"
+// import { datas } from "@/lib/database"
 
 export function CommandMenu() {
     const [open, setOpen] = useState(false)
 
     useEffect(() => {
-        const down = (e) => {
+        const down = (e:KeyboardEvent) => {
             if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
                 e.preventDefault()
                 setOpen((open) => !open)

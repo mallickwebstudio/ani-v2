@@ -18,7 +18,7 @@ export default function Providers({ children }: { children: ReactNode }) {
             </SiteProvider>
             <Toaster />
             {/* <Analytics /> */}
-            {/* <VercelAnalytics /> */}
+            <VercelAnalytics />
         </ThemeProvider>
     )
 }
