@@ -1,15 +1,15 @@
 "use client"
-// import { Triangle } from "lucide-react"
-// import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-// import { SidebarMenu, SidebarMenuButton, SidebarMenuItem } from "@/components/ui/sidebar"
-// import Link from "next/link"
+import { Triangle } from "lucide-react"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { SidebarMenu, SidebarMenuButton, SidebarMenuItem } from "@/components/ui/sidebar"
+import Link from "next/link"
 
 export function SidebarBottom() {
 
   return (
     <div className="relative">
-      {/* <div className="absolute h-6 w-full bottom-full left-0 right-0 bg-gradient-to-t from-background to-transparent" /> */}
-      {/* <SidebarMenu className="relative">
+      <div className="absolute h-6 w-full bottom-full left-0 right-0 bg-gradient-to-t from-background to-transparent" />
+      <SidebarMenu className="relative">
         <SidebarMenuItem>
           <SidebarMenuButton
             size="lg"
@@ -50,7 +50,7 @@ export function SidebarBottom() {
             </Link>
           </SidebarMenuButton>
         </SidebarMenuItem>
-      </SidebarMenu> */}
+      </SidebarMenu>
     </div>
   )
 }

@@ -57,6 +57,33 @@ import WipeUpLeft from "@/animations/tsx/wipe/wipe-up-left";
 import WipeDownRight from "@/animations/tsx/wipe/wipe-down-right";
 import WipeDownLeft from "@/animations/tsx/wipe/wipe-down-left";
 
+import SpinClockwise from "@/animations/tsx/spin/spin-clockwise";
+import SpinAntiClockwise from "@/animations/tsx/spin/spin-anti-clockwise";
+import SpinX from "@/animations/tsx/spin/spin-x";
+import SpinY from "@/animations/tsx/spin/spin-y";
+import SpinZ from "@/animations/tsx/spin/spin-z";
+
+import Swing from "@/animations/tsx/swing/swing";
+import SwingX from "@/animations/tsx/swing/swing-x";
+import SwingY from "@/animations/tsx/swing/swing-y";
+import SwingZ from "@/animations/tsx/swing/swing-z";
+import SkewDiagonal from "@/animations/tsx/skew/skew-diagonal";
+import SkewDiagonalReverse from "@/animations/tsx/skew/skew-diagonal-reverse";
+import SkewX from "@/animations/tsx/skew/skew-x";
+import SkewY from "@/animations/tsx/skew/skew-y";
+import RollUp from "@/animations/tsx/roll/roll-up";
+import RollDown from "@/animations/tsx/roll/roll-down";
+import RollRight from "@/animations/tsx/roll/roll-right";
+import RollLeft from "@/animations/tsx/roll/roll-left";
+import RollIn from "@/animations/tsx/roll/roll-in";
+import RollOut from "@/animations/tsx/roll/roll-out";
+import BlurIn from "@/animations/tsx/blur/blur-in";
+import BlurInUp from "@/animations/tsx/blur/blur-in-up";
+import BlurInDown from "@/animations/tsx/blur/blur-in-down";
+import BlurInLeft from "@/animations/tsx/blur/blur-in-left";
+import BlurInRight from "@/animations/tsx/blur/blur-in-right";
+
+
 // import FadingText from "@/animations/tsx/letter-by-letter/fading-text";
 
 export const masterAnimations: AnimationCategory[] = [
@@ -516,14 +543,241 @@ export const boxAnimations: AnimationCategory[] = [
                 animation: WipeDownLeft,
             },
         ],
+    },
+    {
+        slug: "spin",
+        title: "Spin",
+        href: "/animations/spin",
+        animations: [
+            {
+                slug: "spin-clockwise",
+                title: "Spin Clockwise",
+                href: "/animations/spin#spin-clockwise",
+                jsxFilepath: "src/animations/jsx/spin/spin-clockwise.jsx",
+                tsxFilepath: "src/animations/tsx/spin/spin-clockwise.tsx",
+                animation: SpinClockwise,
+            },
+            {
+                slug: "spin-anti-clockwise",
+                title: "Spin Anti Clockwise",
+                href: "/animations/spin#spin-anti-clockwise",
+                jsxFilepath: "src/animations/jsx/spin/spin-anti-clockwise.jsx",
+                tsxFilepath: "src/animations/tsx/spin/spin-anti-clockwise.tsx",
+                animation: SpinAntiClockwise,
+            },
+            {
+                slug: "spin-x",
+                title: "Spin X",
+                href: "/animations/spin#spin-x",
+                jsxFilepath: "src/animations/jsx/spin/spin-x.jsx",
+                tsxFilepath: "src/animations/tsx/spin/spin-x.tsx",
+                animation: SpinX,
+            },
+            {
+                slug: "spin-y",
+                title: "Spin Y",
+                href: "/animations/spin#spin-y",
+                jsxFilepath: "src/animations/jsx/spin/spin-y.jsx",
+                tsxFilepath: "src/animations/tsx/spin/spin-y.tsx",
+                animation: SpinY,
+            },
+            {
+                slug: "spin-z",
+                title: "Spin Z",
+                href: "/animations/spin#spin-x",
+                jsxFilepath: "src/animations/jsx/spin/spin-z.jsx",
+                tsxFilepath: "src/animations/tsx/spin/spin-z.tsx",
+                animation: SpinZ,
+            },
+        ]
+    },
+    {
+        slug: "swing",
+        title: "Swing",
+        href: "/animations/swing",
+        animations: [
+            {
+                slug: "swing",
+                title: "Swing",
+                href: "/animations/swing#swing",
+                jsxFilepath: "src/animations/jsx/swing/swing.jsx",
+                tsxFilepath: "src/animations/tsx/swing/swing.tsx",
+                animation: Swing,
+            },
+            {
+                slug: "swing-x",
+                title: "Swing X",
+                href: "/animations/swing#swing-x",
+                jsxFilepath: "src/animations/jsx/swing/swing-x.jsx",
+                tsxFilepath: "src/animations/tsx/swing/swing-x.tsx",
+                animation: SwingX,
+            },
+            {
+                slug: "swing-y",
+                title: "Swing Y",
+                href: "/animations/swing#swing-y",
+                jsxFilepath: "src/animations/jsx/swing/swing-y.jsx",
+                tsxFilepath: "src/animations/tsx/swing/swing-y.tsx",
+                animation: SwingY,
+            },
+            {
+                slug: "swing-z",
+                title: "Swing Z",
+                href: "/animations/swing#swing-z",
+                jsxFilepath: "src/animations/jsx/swing/swing-z.jsx",
+                tsxFilepath: "src/animations/tsx/swing/swing-z.tsx",
+                animation: SwingZ,
+            },
+        ]
+    },
+    {
+        slug: "skew",
+        title: "Skew",
+        href: "/animations/skew",
+        animations: [
+            {
+                slug: "skew-diagonal",
+                title: "Skew Diagonal",
+                href: "/animations/skew#skew-diagonal",
+                jsxFilepath: "src/animations/jsx/skew/skew-diagonal.jsx",
+                tsxFilepath: "src/animations/tsx/skew/skew-diagonal.tsx",
+                animation: SkewDiagonal,
+            },
+            {
+                slug: "skew-diagonal-reverse",
+                title: "Skew Diagonal Reverse",
+                href: "/animations/skew#skew-diagonal-reverse",
+                jsxFilepath: "src/animations/jsx/skew/skew-diagonal-reverse.jsx",
+                tsxFilepath: "src/animations/tsx/skew/skew-diagonal-reverse.tsx",
+                animation: SkewDiagonalReverse,
+            },
+            {
+                slug: "skew-x",
+                title: "Skew X",
+                href: "/animations/skew#skew-x",
+                jsxFilepath: "src/animations/jsx/skew/skew-x.jsx",
+                tsxFilepath: "src/animations/tsx/skew/skew-x.tsx",
+                animation: SkewX,
+            },
+            {
+                slug: "skew-y",
+                title: "Skew Y",
+                href: "/animations/skew#skew-y",
+                jsxFilepath: "src/animations/jsx/skew/skew-y.jsx",
+                tsxFilepath: "src/animations/tsx/skew/skew-y.tsx",
+                animation: SkewY,
+            },
+        ]
+    },
+    {
+        slug: "roll",
+        title: "Roll",
+        href: "/animations/roll",
+        animations: [
+            {
+                slug: "roll-up",
+                title: "Roll Up",
+                href: "/animations/roll#roll-up",
+                jsxFilepath: "src/animations/jsx/roll/roll-up.jsx",
+                tsxFilepath: "src/animations/tsx/roll/roll-up.tsx",
+                animation: RollUp,
+            },
+            {
+                slug: "roll-down",
+                title: "Roll Down",
+                href: "/animations/roll#roll-down",
+                jsxFilepath: "src/animations/jsx/roll/roll-down.jsx",
+                tsxFilepath: "src/animations/tsx/roll/roll-down.tsx",
+                animation: RollDown,
+            },
+            {
+                slug: "roll-right",
+                title: "Roll Right",
+                href: "/animations/roll#roll-right",
+                jsxFilepath: "src/animations/jsx/roll/roll-right.jsx",
+                tsxFilepath: "src/animations/tsx/roll/roll-right.tsx",
+                animation: RollRight,
+            },
+            {
+                slug: "roll-left",
+                title: "Roll Left",
+                href: "/animations/roll#roll-left",
+                jsxFilepath: "src/animations/jsx/roll/roll-left.jsx",
+                tsxFilepath: "src/animations/tsx/roll/roll-left.tsx",
+                animation: RollLeft,
+            },
+            {
+                slug: "roll-in",
+                title: "Roll In",
+                href: "/animations/roll#roll-in",
+                jsxFilepath: "src/animations/jsx/roll/roll-in.jsx",
+                tsxFilepath: "src/animations/tsx/roll/roll-in.tsx",
+                animation: RollIn,
+            },
+            {
+                slug: "roll-out",
+                title: "Roll Out",
+                href: "/animations/roll#roll-out",
+                jsxFilepath: "src/animations/jsx/roll/roll-out.jsx",
+                tsxFilepath: "src/animations/tsx/roll/roll-out.tsx",
+                animation: RollOut,
+            },
+        ]
+    },
+    {
+        slug: "blur",
+        title: "Blur",
+        href: "/animations/blur",
+        animations: [
+            {
+                slug: "blur-in",
+                title: "Blur In",
+                href: "/animations/blur#blur-in",
+                jsxFilepath: "src/animations/jsx/blur/blur-in.jsx",
+                tsxFilepath: "src/animations/tsx/blur/blur-in.tsx",
+                animation: BlurIn,
+            },
+            {
+                slug: "blur-in-up",
+                title: "Blur In Up",
+                href: "/animations/blur#blur-in-up",
+                jsxFilepath: "src/animations/jsx/blur/blur-in-up.jsx",
+                tsxFilepath: "src/animations/tsx/blur/blur-in-up.tsx",
+                animation: BlurInUp,
+            },
+            {
+                slug: "blur-in-down",
+                title: "Blur In Down",
+                href: "/animations/blur#blur-in-down",
+                jsxFilepath: "src/animations/jsx/blur/blur-in-down.jsx",
+                tsxFilepath: "src/animations/tsx/blur/blur-in-down.tsx",
+                animation: BlurInDown,
+            },
+            {
+                slug: "blur-in-right",
+                title: "Blur In Right",
+                href: "/animations/blur#blur-in-right",
+                jsxFilepath: "src/animations/jsx/blur/blur-in-right.jsx",
+                tsxFilepath: "src/animations/tsx/blur/blur-in-right.tsx",
+                animation: BlurInRight,
+            },
+            {
+                slug: "blur-in-left",
+                title: "Blur In Left",
+                href: "/animations/blur#blur-in-left",
+                jsxFilepath: "src/animations/jsx/blur/blur-in-left.jsx",
+                tsxFilepath: "src/animations/tsx/blur/blur-in-left.tsx",
+                animation: BlurInLeft,
+            },
+        ]
     }
 ]
 
 export const textAnimations: AnimationCategory[] = [
     {
-        slug: "letter-by-letter",
-        title: "Letter By Letter",
-        href: "/animations/letter-by-letter",
+        slug: "text-animation",
+        title: "Text Animation",
+        href: "/animations/text-animation",
         animationType: "text",
         animations: []
         // animations: [

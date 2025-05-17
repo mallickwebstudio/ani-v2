@@ -23,7 +23,7 @@ export default async function page({
 
   return (
     <main>
-      <h1 className="p-4 text-center border bg-accent/70 rounded-md capitalize font-bold">
+      <h1 className="p-4 text-center border bg-accent/70 rounded-md capitalize h2 md:h1">
         {slug} animation
       </h1>
       <div className="mt-4 grid sm:grid-cols-2 min-[1800px]:grid-cols-3 min-[2200px]:grid-cols-4 gap-4">

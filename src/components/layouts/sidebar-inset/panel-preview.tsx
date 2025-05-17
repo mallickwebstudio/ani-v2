@@ -47,7 +47,7 @@ export default function PanelPreview({
                 key={reanimate}
                 {...(variant ? { variant: selectedVariant } : {})}
             >
-                <div className="size-20 aspect-square rounded-md bg-primary border" />
+                <div className="size-10 md:size-20 aspect-square rounded-md bg-primary border" />
             </Animation>
         </div>
     )
